@@ -49,7 +49,7 @@ function winnerCheck() {
             winUpdate(a.innerText);
             return;
         }
-    }
+    }   
 }
 
 function winUpdate(box){
