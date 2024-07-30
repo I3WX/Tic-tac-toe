@@ -63,8 +63,10 @@ function winUpdate(box){
         `
     resetGame()
 }
-reset.addEventListener("click" , resetGame())
+reset.addEventListener("click" , resetGame)
+
 function resetGame(){
+    console.log("hi");
     arrayBox.forEach(box => {
         box.innerText = ""
     });
