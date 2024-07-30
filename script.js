@@ -12,6 +12,7 @@ const symbol = document.getElementById("symbol")
 const turn = document.getElementById("turn")
 const boxContainer = document.querySelector(".boxContainer")
 const Wins = document.querySelector(".wins")
+const reset = document.getElementById("reset")
 let XOSymbol = "X"
 let Player1Win = 0
 let Player2Win = 0
@@ -62,7 +63,7 @@ function winUpdate(box){
         `
     resetGame()
 }
-
+reset.addEventListener("click" , resetGame())
 function resetGame(){
     arrayBox.forEach(box => {
         box.innerText = ""
