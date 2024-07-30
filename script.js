@@ -54,7 +54,6 @@ function winnerCheck() {
 }
 
 function winUpdate(box){
-    console.log("ji frm onupdate")
     box == "X" ? Player1Win++  : Player2Win ++
     box == "X" ? alert("X 1 Wins")  : alert("O 2 Wins")
     Wins.innerHTML = `
@@ -66,7 +65,6 @@ function winUpdate(box){
 reset.addEventListener("click" , resetGame)
 
 function resetGame(){
-    console.log("hi");
     arrayBox.forEach(box => {
         box.innerText = ""
     });

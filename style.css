@@ -106,3 +106,23 @@ body {
 .reset:hover {
     background-color: #004d40; 
 }
+
+@media (max-width: 600px) {
+    .box {
+        height: 80px; 
+        font-size: 24px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .reset {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
